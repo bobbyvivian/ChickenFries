@@ -1,3 +1,13 @@
+def front_times(str, n):
+  length = min(3, len(str))
+  return n*str[0:length]
+  
+def string_bits(str):
+  return str[::2]
+
+def string_times(str, n):
+  return n*str
+
 def string_bits(str):
   final = ""
   for i in range (0,len(str),2):
