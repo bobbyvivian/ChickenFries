@@ -49,3 +49,18 @@ def sum67(nums):
 
     i+=1
   return count
+
+ def has22(nums):
+  if len(nums)<=1: #no matter what, arrays of size one or zero will return False
+    return False
+  for i in range(len(nums)):
+    if i == 0: #check if val is the first one in array
+      if nums[i] == 2 and nums[i+1] == 2:
+        return True
+    elif i == len(nums)-1: #check if it's the last val in array
+      if nums[i] == 2 and nums[i-1] == 2:
+        return True
+    else: #middle numbers
+      if nums[i] == 2 and (nums[i+1]==2 or nums[i-1]==2):
+        return True
+  return False
