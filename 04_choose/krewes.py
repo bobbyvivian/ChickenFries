@@ -9,8 +9,11 @@ import dictionary
 import random
 
 def randomDevo(krewes):
-    return random.choice(random.choice(list(krewes.values())))
-
-# print(randomDevo(dictionary.krewes))
+    print random.choice(random.choice(list(krewes.values())))
+#     key = random.choice(dict.keys(krewes))
+# #     name = random.choice()
+#     print(key)
+    
+(randomDevo(dictionary.krewes))
 
     
