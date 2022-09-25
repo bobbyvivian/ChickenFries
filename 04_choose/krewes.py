@@ -1,7 +1,12 @@
 """
 Chicken Fries (Mahir Riki, Vivian Teo, Gabriel Thompson)
 SoftDev
-K04 -- python file that randomly generates a developer from a dictionary
+K04 -- python file that randomly generates a developer and their period from a
+       dictionary. The keys in the dictionary are periods, and each key has a value
+       of lists with developer names. The program first randomly selects a key from
+       the dictionary using random.choice, then randomly selects a name from the
+       list corresponding with that period using random.choice. Finally, the program
+       prints out both.
 2022-09-22
 time spent: 0.5 hours
 """
