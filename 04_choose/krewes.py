@@ -9,10 +9,12 @@ import dictionary
 import random
 
 def randomDevo(krewes):
-    print random.choice(random.choice(list(krewes.values())))
-#     key = random.choice(dict.keys(krewes))
-# #     name = random.choice()
-#     print(key)
+# printing only the devo's name
+    # print(random.choice(random.choice(list(krewes.values()))))
+# printing both the devo's name and period
+    key = random.choice(list(dict.keys(krewes)))
+    name = random.choice(list(krewes[key]))
+    print(str(key)+", "+name)
     
 (randomDevo(dictionary.krewes))
 
