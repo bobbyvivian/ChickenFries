@@ -26,8 +26,7 @@ for person in tuples:
     
     if not (pd in krewes): # if there is no dictionary for that period yet
         krewes[pd] = {}
-        # pd_dict is the dictionary/value for the key with specific pd
-        # adds devo as key, and ducky as value to pd_dict
+    # adds devo as key, and ducky as value
     krewes[pd][devo] = ducky
 
 # print(krewes)
