@@ -1,4 +1,1 @@
-krewes = {2:{emily:rain}
-          7:{vivian:froggy}
-          8:{devo:ducky}
-          }
+2$$$emily$$$rain@@@2$$$devoA$$$duckyA@@@7$$$vivian$$$froggy@@@2$$$devo$$$duckyB@@@8$$$devo$$$ducky@@@7$$$devoC$$$duckyC@@@8$$$devo$$$DduckyD
