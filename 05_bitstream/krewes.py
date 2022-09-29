@@ -14,7 +14,6 @@ content = f.read()
 tuples = content.split("@@@")
 # empty dictionary
 krewes = {}
-# krewes_pds contains all the keys/pds in krewes as a list
 
 for person in tuples:
     # splitting elements tuples into a lists of [pd, devo, ducky]
@@ -37,4 +36,5 @@ def random_dev(krewes):
     devo = random.choice(list(dict.keys(nameDict)))
     ducky = nameDict[devo]
     print(str(key)+", "+devo+", "+ducky+", ")
+    
 random_dev(krewes)
