@@ -1,13 +1,13 @@
 """
-Vivian Teo, Emily Ortiz
+TeOrtiz: Vivian Teo, Emily Ortiz 
 SoftDev
 K06 -- Random Jobs
 2022-09-30
 time spent: 1 hour
 
-DISCO: 
+DISCO: Discovered the weighted parameter in random.choices
 
-QCC: 
+QCC: What other methods are there to tackle weighted random without the built in function?
 """
 
 import random
@@ -36,4 +36,8 @@ def weighted_random(job_dict):
     # since random_job is a list consisting of one element, we can print the first element
     print(random_job[0])
     
-weighted_random(job_dict)
+# weighted_random(job_dict)
+
+# print("Pick 10 random jobs:")
+# for i in range(10):
+#     weighted_random(job_dict)
