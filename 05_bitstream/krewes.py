@@ -1,5 +1,5 @@
 """
-Vivian Teo, Emily Ortiz
+TeOrtiz: Vivian Teo, Emily Ortiz
 SoftDev
 K05 -- Populating Krewes Dictionary
 2022-09-29
@@ -69,9 +69,9 @@ def random_dev(krewes):
 # print("random_dev test:")
 # random_dev(krewes)
 
-print("Pick 10 random devos:")
-for i in range(10):
-    random_dev(krewes)
+# print("Pick 10 random devos:")
+# for i in range(10):
+#     random_dev(krewes)
 
 # print()
 # print("Was krewes populated properly?")
