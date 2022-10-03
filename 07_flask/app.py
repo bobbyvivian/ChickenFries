@@ -18,8 +18,8 @@ DISCO:
 QCC:
 0. 
 1. '/' : seen it when accessing directories, it's like a pathway for where you want to go
-2. 
-3. 
+2. It'll print to the title of the webpage
+3. 127.0.0.1:5000/
 4. This'll appear on the webpage. I know because I tested this and saw for myself
 5. 
 ...
