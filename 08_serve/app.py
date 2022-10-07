@@ -1,5 +1,6 @@
 # DogDino: Anjini, Gabriel, Vivian
 # SoftDev v0
+# K08 - Create a webpage with random occupation
 # Oct 6-7 2022
 
 import random
@@ -9,8 +10,8 @@ app = Flask(__name__) #create instance of class Flask
 
 @app.route("/")       #assign fxn to route
 def hello_world():
-    
-    return ""
+    job_dict = create_dict("occupations.csv")
+    return weighted_random(job_dict)
 
 # if __name__ == "__main__":  # true if this file NOT imported
 #     app.debug = True        # enable auto-reload upon code change
@@ -36,4 +37,4 @@ def weighted_random(job_dict):
     #use python's built-in weighted random choice function to get a job title
     random_job = random.choices(list(dict.keys(job_dict)), weights=list(dict.values(job_dict)))
     # since random_job is a list consisting of one element, we can print the first element
-    print(random_job[0])
+    return random_job[0]
