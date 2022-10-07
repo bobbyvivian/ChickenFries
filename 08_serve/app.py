@@ -1,7 +1,8 @@
 # DogDino: Anjini, Gabriel, Vivian
 # SoftDev
 # K08 - Create a webpage with random occupation 
-# Oct 7 2022
+# 2022-10-07
+# time spent: 2 hours
 
 """
 DISCO:
@@ -60,7 +61,7 @@ def rando_job():
     return "<h2>DogDino: Anjini, Gabriel, Vivian</h2>" \
            +"<br><b>Random Job: </b>"+final_job \
            +"<br><br>"+"<b>List of Jobs:</b>"+lizst
-
+app.debug = True
 app.run()
 
 # if __name__ == "__main__":  # true if this file NOT imported
