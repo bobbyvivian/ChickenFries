@@ -4,12 +4,8 @@
 # 2022-10-14
 
 DISCO:
- * render_template is a function that takes in, as arguments, a file path relative to templates and as many parameters as you want. The parameters are then replaced in the html file
- * You can pass in your own arguments into a function by writing each argument's name and it's value, separated by an equals sign
- * render_template returns a string
- * In an HTML template, you can put variables to be replaced by putting their name between {{ }}
- * You can write for loops in Jinja by writing {% for item in collection %} and {% endfor %} and placing the content of the loop in between
-
-QCC:
- * What if you place a non-HTML file into Jinja? (We were too lazy to try this out)
- * What it you want your HTML file to contain double squirrely brackets to display on the webpage? How would you write this without it getting interpreted as Jinja syntax
+* request.args is a MultiDict (similar to a dictionary) that can contain multiple values for the same key. This means we can store multiple usernames in it.
+* MultiDicts are useful for storing things like usernames and passwords in a form submission
+* running print(request.args['username']) can result in an error because the MultiDict may be empty.
+* <form action="/auth"> in the html file connects the front-end to the back-end
+* <input type="text" name="username"> in the html file allows us to reference username from the python file as it gets stored in request.args as a key
