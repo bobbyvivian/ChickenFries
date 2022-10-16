@@ -9,3 +9,6 @@ DISCO:
 * running print(request.args['username']) can result in an error because the MultiDict may be empty.
 * <form action="/auth"> in the html file connects the front-end to the back-end
 * <input type="text" name="username"> in the html file allows us to reference username from the python file as it gets stored in request.args as a key
+
+QCC:
+* if request.args can also store passwords, how do people access the MultiDict for heinous purposes?
