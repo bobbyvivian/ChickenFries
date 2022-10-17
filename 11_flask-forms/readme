@@ -9,6 +9,9 @@ DISCO:
 * running print(request.args['username']) can result in an error because the MultiDict may be empty.
 * <form action="/auth"> in the html file connects the front-end to the back-end
 * <input type="text" name="username"> in the html file allows us to reference username from the python file as it gets stored in request.args as a key
+* get is the default method, so you need to specify in the <form> tag method="post"
+* request.args corresponds to GET, request.forms corresponds with POST, they're mutually exclusive
 
 QCC:
 * if request.args can also store passwords, how do people access the MultiDict for heinous purposes?
+* "The method is not allowed for the requested URL." is returned in the browser when you only have 'POST' in the methods list for /auth route. this doesn't happen for / route.
