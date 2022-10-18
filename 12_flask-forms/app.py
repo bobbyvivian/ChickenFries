@@ -1,6 +1,10 @@
-# Popeyes: Lauren, Ian, Vivian
-# SoftDev
-# Oct 17 2022
+'''
+Popeyes: Lauren Lee, Vivian Teo, Ian Jiang
+SoftDev
+K12 -- Take and Give
+2022-10-17
+time spent: 0.5
+ '''
 
 from flask import Flask             #facilitate flask webserving
 from flask import render_template   #facilitate jinja templating
@@ -21,30 +25,29 @@ TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
 Process results.
-
 PROTIP: Insert your own in-line comments
  wherever they will help
   your future self and/or current teammates
    understand what is going on.
 '''
 
-@app.route("/") #, methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
-    print(app)
+    print(app) 
     print("***DIAG: request obj ***")
     print(request)
     print("***DIAG: request.args ***")
-    print(request.args)
+    print(request.args) #prints ImmutableMultiDict([])
     #print("***DIAG: request.args['username']  ***")
     #print(request.args['username'])
-    print("***DIAG: request.headers ***")
-    print(request.headers)
+    print("***DIAG: request.headers ***") 
+    print(request.headers) #information on the computer making the request
     return render_template( 'login.html' )
 
 
-@app.route("/auth") # , methods=['GET', 'POST'])
+@app.route("/auth", methods=['POST'])
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
@@ -53,12 +56,18 @@ def authenticate():
     print(request)
     print("***DIAG: request.args ***")
     print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    if 'username' in request.args: # error otherwise because request.args (MultiDict) could be empty
+        print("***DIAG: request.args['username']  ***") # username is like a key
+        print(request.args['username'])
+    if 'username' in request.form: 
+        print("***DIAG: request.form['username']  ***") # username is like a key
+        print(request.form['username'])
     print("***DIAG: request.headers ***")
     print(request.headers)
-    return "Waaaa hooo HAAAH"  #response to a form submission
-
+    if 'username' in request.args: # error otherwise because request.args (MultiDict) could be empty
+        return render_template( 'response.html' , user = request.args['username'], meth = 'GET')  #response to a form submission
+    else:
+        return render_template( 'response.html' , user = request.form['username'], meth = 'POST')
 
     
 if __name__ == "__main__": #false if this file imported as module
