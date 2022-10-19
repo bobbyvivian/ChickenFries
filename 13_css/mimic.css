@@ -17,17 +17,21 @@ h1 {
 }
 #middle {
   background-color: rgb(140, 140, 140);
-  display: grid;
-  grid-template-columns: 15% 35%;
+  /* display: grid; */
+  /* grid-template-columns: 15% 35%; */
 
 }
 #main {
+  display: inline-block;
   margin-left: auto;
+  vertical-align: top;
+  padding-left: 5%;
 
 }
 #nav {
+  display: inline-block;
   margin-right: auto;
-  padding-left: 5%;
+  padding-left: 1%;
 
 }
 h4 {
