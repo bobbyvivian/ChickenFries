@@ -23,6 +23,7 @@ with open('students.csv', newline='') as csvfile:
 
 students_table = c.execute("SELECT * FROM students")
 print(students_table.fetchall())
+print()
 
 # courses table
 DB_FILE="courses.db"
