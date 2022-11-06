@@ -1,0 +1,16 @@
+POPEYES: Lauren Lee, Vivian Teo, Ian Jiang
+SoftDev
+K19 -- Sessions Greetings
+2022-11-03
+time spent: 3
+
+DISCO:
+* Code within try blocks should be short and the except block should anticipate a specific error
+* redirect() instead of render_template() will redirect the user to a certain url
+* Start a session by generating a secret key and assigning a value to session['username']
+* End a session by doing session.pop() on the username
+
+QCC:
+* We weren't sure how to use exception handling to anticipate errors. What errors were we supposed to anticipate and how would we use try and except guarantee no fails?
+* Is it possible to use GET requests with sessions?
+* Do we only need to create a session for 'username' and not 'pass'?
