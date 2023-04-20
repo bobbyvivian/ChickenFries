@@ -102,12 +102,12 @@ function gcd(n,m) {
 function change() {
   document.getElementById("li0").innerHTML="fact of 5: " + fact(5);
   document.getElementById("li1").innerHTML="gcd of 5 and 20: "+ gcd(5,20);
-  document.getElementById("li2").innerHTML=fib(9);
-  document.getElementById("li3").innerHTML=fact(9);
-  document.getElementById("li4").innerHTML=gcd(90,70);
-  document.getElementById("li5").innerHTML=
-  document.getElementById("li6")
-  document.getElementById("li7")
+  document.getElementById("li2").innerHTML="fib of 9: " + fib(9);
+  document.getElementById("li3").innerHTML="fact of 9: " + fact(9);
+  document.getElementById("li4").innerHTML="gcd of 90 and 70: " + gcd(90,70);
+  document.getElementById("li5").innerHTML="fib of 20: " + fib(20);
+  document.getElementById("li6").innerHTML="fact of 23: " + fact(23);
+  document.getElementById("li7").innerHTML="gcd of 79 and 53: " + gcd(79,53);
 
 }
 
