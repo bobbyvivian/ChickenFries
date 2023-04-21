@@ -1,7 +1,7 @@
 // Team TT :: Donald Bi and Vivian Teo
 // SoftDev pd8
-// K28 -- Getting more comfortable with the dev console and the DOM
-// 2023-04-05w
+// K29 -- DOMfoolery++ 
+// 2023-04-24
 // --------------------------------------------------
 
 
@@ -40,15 +40,18 @@ factSubmitButton.addEventListener('click', ()=> {
 
 });
 
-//gcd
-// var fibInputButton = document.getElementById("fib-input");
-// const fibSubmitButton = document.getElementById("fib-submit");
-// fibSubmitButton.addEventListener('click', ()=> {
-//   const n = fibInputButton.value;
-//   const fibOutput = document.getElementById("fib-output");
-//   fibOutput.innerHTML = fib(n);
+// gcd
+var gcdInputButton = document.getElementById("gcd-input");
+var gcdInput2Button = document.getElementById("gcd-input2");
 
-// });
+const gcdSubmitButton = document.getElementById("gcd-submit");
+gcdSubmitButton.addEventListener('click', ()=> {
+  const n = gcdInputButton.value;
+  const m = gcdInput2Button.value;
+  const gcdOutput = document.getElementById("gcd-output");
+  gcdOutput.innerHTML = gcd(n,m);
+
+});
 
 
 

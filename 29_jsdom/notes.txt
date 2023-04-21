@@ -1,18 +1,16 @@
-Team TT :: Brianna Tieu and Vivian Teo
+Team TT :: Donald Bi and Vivian Teo
 SoftDev pd8
-K28 -- Getting more comfortable with the dev console and the DOM
-2023-04-05w
+K29 -- DOMfoolery++ 
+2023-04-24
 
 DISCO
 -----------------------------------------------------------------
-* DOM automatically fills in body and head branches for you even if you don't specify these elements in the html
-* .innerHTML: the text inside the elements ex: <body>innerHTML</body>. So if you want to change something, 
-    document.getElementById(id/class/tag).innerHTML="whatever";
-* .setAttribute(name of attribute, val you want to set it to)
+*Can use JS to take in user input and give you output
+*Can use for loops in JS for efficiency, very similar syntax to Java
+*Can use `` to format special string
 =================================================================
 
 QCC
 -----------------------------------------------------------------
-* js syntax is fairly simple to understand, stuff we've seen before
-    ex: you can add strings and numbers to output a string: "fact of 5: " + fact(5)
+* What's the different between normal and arrow functions?
 =================================================================
