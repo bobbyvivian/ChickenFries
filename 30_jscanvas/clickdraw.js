@@ -20,23 +20,25 @@ var toggleMode = (e) => {
     console.log("toggling...");
     if (mode === "rect") {
         mode = "circ"
+        makeButton.innerHTML = "Circle";
     }
     else {
         mode = "rect"
+        makeButton.innerHTML = "Rectangle";
     }
 }
 
 var drawRect = function(e) {
-    var mouseX = e.clientX //gets X-coor of mouse when event is fired
-    var mouseY = e.clientY //gets Y-coor of mouse when event is fired
+    var mouseX = e.offsetX //gets X-coor of mouse when event is fired
+    var mouseY = e.offsetY //gets Y-coor of mouse when event is fired
     console.log("mouseclick registered at ", mouseX, mouseY)
     ctx.fillStyle = "orange";
     ctx.fillRect(mouseX, mouseY, 50, 60)
 }
 
 var drawCircle = function(e) {
-    var mouseX = e.clientX //gets X-coor of mouse when event is fired
-    var mouseY = e.clientY //gets Y-coor of mouse when event is fired
+    var mouseX = e.offsetX //gets X-coor of mouse when event is fired
+    var mouseY = e.offsetY //gets Y-coor of mouse when event is fired
     console.log("mouseclick registered at ", mouseX, mouseY)
     centerX = c.width/2;
     centerY = c.width/2;
