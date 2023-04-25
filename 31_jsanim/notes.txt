@@ -1,0 +1,11 @@
+Team TT :: Donald Bi and Vivian Teo
+SoftDev pd8
+K31 -- JS Paint, Paint, Paint...
+2023-04-26
+--------------------------------------------------
+
+DISCO:
+* window.
+--------------------------------------------------
+
+QCC:
