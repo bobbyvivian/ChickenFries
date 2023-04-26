@@ -15,7 +15,7 @@ var requestID; //counter for time
 
 
 ctx.fillStyle = "blue";stopButton.addEventListener("click", stopIt);
-var clear = (e) => {
+var clear = function(e) {
     // e.preventDefault(); //prevents
     ctx.clearRect(0,0,c.width,c.height);
 }
@@ -26,8 +26,8 @@ var dvdLogoSetup = function() {
     var rectWidth = 120;
     var rectHeight = 60;
 
-    var rectX = Math.random() * (c.width); //random coords 
-    var rectY = Math.random() * (c.width); //random coords 
+    var rectX = Math.random() * (c.width-rectWidth); //random coords 
+    var rectY = Math.random() * (c.width-rectHeight); //random coords 
 
     var xVel = 1;
     var yVel = 1;
@@ -39,11 +39,11 @@ var dvdLogoSetup = function() {
         ctx.clearRect(0,0,c.width,c.height);
         ctx.drawImage(logo,rectX,rectY,rectWidth,rectHeight);
 
-        if (rectX >= c.width || rectX <= 0) {
+        if (rectX + rectWidth >= c.width || rectX <= 0) {
             xVel = -1 * xVel;
         }
 
-        if (rectY >= c.width || rectY <= 0) {
+        if (rectY + rectHeight >= c.width || rectY <= 0) {
             yVel = -1 * yVel;
         }
 

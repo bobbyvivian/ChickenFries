@@ -5,8 +5,9 @@ K32 -- JS Bounce
 --------------------------------------------------
 
 DISCO:
-*
+* Need to account for all corners of the dvd logo when preventing it from going past boundaries
+* Velocity: takes into direction of the logo
 --------------------------------------------------
 
 QCC:
-*
+* Why do we need preventDefault() in this scenario..? Doesn't seem to do much
