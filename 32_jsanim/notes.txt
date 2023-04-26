@@ -6,6 +6,7 @@ K32 -- JS Bounce
 
 DISCO:
 * Need to account for all corners of the dvd logo when preventing it from going past boundaries
+* Need to account for all corners when generating random coordinates (logo has a width and height! use it)
 * Velocity: takes into direction of the logo
 --------------------------------------------------
 
