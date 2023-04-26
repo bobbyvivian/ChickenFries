@@ -26,24 +26,24 @@ var drawDot = () => {
     console.log("drawDot invoked...");
     clear(); //wipe the canvas
 
-    // if reach bounds, stop growing
+    // if reach bounds, stop growing/shrinking
     if (radius===(c.height/2)) {
         growing = false;
     }
-
-    // change radius (growing/shrinking)
     if (radius<=0) {
         growing = true;
     }
 
+    // change radius (growing/shrinking)
     if (growing) {
         radius++
     }
     else {radius--}
 
     drawCircle(); //draw circle
-    window.cancelAnimationFrame(requestID);
-    requestID = window.requestAnimationFrame(drawDot);
+
+    window.cancelAnimationFrame(requestID); //prevents exponential growth
+    requestID = window.requestAnimationFrame(drawDot); 
 }
 
 var stopIt = () => {
