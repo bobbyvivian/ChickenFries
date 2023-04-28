@@ -1,5 +1,12 @@
 Team TT :: Donald Bi and Vivian Teo
 SoftDev pd8
-K33 -- JS 
+K33 -- JS Bubble & Squeak
 2023-04-28
 --------------------------------------------------
+
+DISCO/QCC:
+* boolean arg in .addEventListener('click', clicky, false/true);
+always prioritizes true, and if the arg is true, then it follows the events that are true, and then in the order of highest parent first,
+and if it's false then it follows the regular order of the lowest/youngest child first (going up the branches of heredity)
+* without the boolean arg, whichever element is the farthest down the line of children pops up first-->then we go up the branches of the DOM Tree
+
